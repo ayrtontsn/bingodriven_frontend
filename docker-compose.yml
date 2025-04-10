@@ -1,0 +1,9 @@
+services:
+  frontend:
+    image: daily-kindness-frontend
+    container_name: daily-kindness-frontend
+    build:
+      context: .
+      dockerfile: Dockerfile 
+    ports:
+      - 80:80
