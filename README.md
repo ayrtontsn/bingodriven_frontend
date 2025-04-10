@@ -1,8 +1,10 @@
-# React + Vite
+#Link do bingo:
+https://bingodriven-frontend-1ckxb9774-ayrton-nascimentos-projects.vercel.app/
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+#comando para subir o projeto COM DOCKER COMPOSE
+    docker compose up -d
 
-Currently, two official plugins are available:
-
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+#comando para subir o projeto SEM DOCKER COMPOSE
+    docker build -t daily-kindness-frontend .
+    docker run -d --name front-end -p 8080:80 daily-kindness-frontend
+    //acessar: (http://localhost:8080/)
