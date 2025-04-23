@@ -7,6 +7,9 @@ WORKDIR /app
 # Copie o arquivos para dentro do WORKDIR
 COPY . .
 
+ARG VITE_BACKEND
+ENV VITE_BACKEND=$VITE_BACKEND
+
 # Baixa as dependências
 RUN npm install
 
